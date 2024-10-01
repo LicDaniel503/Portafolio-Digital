@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Daniel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="foto.jpg" alt="">
+            </div>
+            <h1>JOSUÉ DANIEL GIRÓN MIRA</h1>
+            <h2>Abogado de la República de El Salvador</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/DanielGiron11" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/_DANIEL_GIRON_" target="_blank" title="Sígueme en X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <a href="https://www.linkedin.com/in/josuegiron011/" target="_blank" title="Conéctame en LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Josué Daniel Girón Mira.</span> Abogado de la República de El Salvador; con una sólida trayectoria en el ámbito legal y administrativo, con experiencia en la gestión de equipos y proyectos estratégicos. He desempeñado roles clave en instituciones de alto perfil, donde coordiné equipos de trabajo y gestioné la verificación de datos en campo. Mi formación en ciencias jurídicas, ciberseguridad y regulación me permite aportar una visión integral en la resolución de problemas y la toma de decisiones informadas.</p>
+
+            <p>Destaco por ser una persona organizada, proactiva y con alta capacidad para adaptarme a entornos dinámicos, cualidades esenciales para roles de liderazgo y gestión. Tengo habilidades comprobadas en la supervisión de procesos, gestión de expedientes y asistencia a la alta dirección, contribuyendo a la integración eficiente de equipos multidisciplinarios y al cumplimiento de objetivos organizacionales. Mi compromiso con la mejora continua y el trabajo en equipo asegura una ejecución precisa y oportuna de las tareas asignadas.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11-08-1996
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (503) 74303972
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            josuegiron011@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Chalatenango, Chalatenango
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ABOGADO</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                                <span>Derecho Penal</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-gavel"></i>
+                                <span>Derecho Civil</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-house-user"></i>
+                                <span>Derecho de Familia</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-file-contract"></i>
+                                <span>Contratos</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Ciberseguridad</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-heart-crack"></i>
+                                <span>Divorcios</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <button onclick="window.open('https://www.icloud.com/iclouddrive/0d52z3Q2OUo43nvOd9SlV9E3Q#(CV)_Lic._Josu%C3%A9_Daniel_Gir%C3%B3n_Mira_(Abogado)', '_blank')">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formación académica</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Ciencias Jurídicas</h4>
+                        <span class="casa">Universidad Dr. Andrés Bello</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p>Estudios profesionales en Ciencias Jurídicas</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachillerato General</h4>
+                        <span class="casa">Instituto Nacional Dr. Francisco Martínez Suarez, Chalatenango</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <p>Estudios de bachillerato general</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico Superior Universitario en Ciberseguridad</h4>
+                        <span class="casa">Escuela Superior de Innovación y Tecnología – ESIT</span>
+                        <span class="fecha">2024 - Actual</span>
+                        <p>Estudios técnicos en ciberseguridad</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Supervisor de Brigada</h4>
+                        <span class="casa">Banco Central de Reserva</span>
+                        <span class="fecha">27/04/2024 - 29/06/2024</span>
+                        <p>Supervisé y verifiqué el trabajo diario de los censistas, asegurando la precisión de los datos y el cumplimiento de plazos. Informé al supervisor de zona sobre incidencias, proponiendo soluciones para mantener el buen desarrollo del proyecto.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Practicante Jurídico</h4>
+                        <span class="casa">Juzgado de Menores</span>
+                        <span class="fecha">06/02/2023 - 25/08/2023</span>
+                        <p>En el área administrativa, gestioné expedientes y elaboré actas de corrección de foliación, asegurando la precisión documental. En el área jurídica, analicé procesos en trámite, redacté actas de audiencias y resoluciones, y coordiné la gestión de oficios con diversas instituciones, contribuyendo a la fluidez y organización de los procesos legales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Direccionador de Servicios</h4>
+                        <span class="casa">Banco Agrícola</span>
+                        <span class="fecha">18/02/2023 - 03/04/2023</span>
+                        <p>Brindé apoyo en el área de Servicio al Cliente, gestionando de manera eficiente los canales electrónicos para agilizar las transacciones bancarias a través de la plataforma Qflow. Mi enfoque fue garantizar una atención rápida y precisa, facilitando la experiencia del cliente en la realización de trámites bancarios.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <form id="contactForm" action="https://formspree.io/f/xvgpewaw" method="POST">
+                    <label>
+                        Para empezar, dinos tu nombre: <span>*</span>
+                        <input type="text" name="nombre" required placeholder="Tu Nombre">
+                    </label>
+                    <label>
+                        Ahora, necesitamos tu correo electrónico: <span>*</span>
+                        <input type="email" name="email" required placeholder="tu@email.com">
+                    </label>
+                    <label>
+                        Ahora, necesitamos tu teléfono: <span>*</span>
+                        <input type="tel" name="telefono" required placeholder="Número telefónico">
+                    </label>
+                    <label>
+                        Háblanos de tu proyecto: <span>*</span>
+                        <textarea name="mensaje" required placeholder="¿Qué tienes en mente?"></textarea>
+                    </label>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+                <div id="formStatus" class="form-status"></div> <!-- Para mostrar el estado del envío -->
+                
+                <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+                    <h2>¡Gracias por tu mensaje!</h2>
+                                    </ul>
+                    <p>🔒 Secreto profesional garantizado.</p>
+                </div>
+            </div>
+            <!-- Información de contacto -->
+            <div class="col">
+                <img src="ubicacion.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chalatenango, Chalatenango
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Llamanos: (503) 74303972
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: dgiron028@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript para manejar el envío del formulario -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevenir el envío normal del formulario
+        
+        // Mostrar el mensaje de agradecimiento y el secreto profesional
+        document.getElementById('thankYouMessage').style.display = 'block';
+        
+        // Ocultar el formulario
+        this.style.display = 'none';
+        
+        // Desaparecer el mensaje después de 5 segundos
+        setTimeout(function() {
+            document.getElementById('thankYouMessage').style.display = 'none';
+            document.getElementById('contactForm').reset(); // Reiniciar el formulario
+            document.getElementById('contactForm').style.display = 'block'; // Mostrar nuevamente el formulario
+        }, 5000); // 5000 milisegundos = 5 segundos
+    });
+</script>
+
+        <style>
+        /* Estilo para el mensaje de estado */
+        .form-status {
+            font-size: 24px; /* Tamaño del texto */
+            font-weight: bold; /* Negrita */
+            color: green; /* Color del texto */
+            opacity: 0; /* Inicialmente invisible */
+            transition: opacity 0.5s ease-in-out; /* Transición para el efecto */
+        }
+
+        .form-status.visible {
+            opacity: 1; /* Hacer visible */
+        }
+        </style>
+
+        <script>
+        let lastSubmitTime = 0;
+        const cooldownPeriod = 60000; // 60 segundos de espera
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el envío estándar del formulario
+            
+            const now = Date.now();
+            if (now - lastSubmitTime < cooldownPeriod) {
+                const remainingTime = Math.ceil((cooldownPeriod - (now - lastSubmitTime)) / 1000);
+                document.getElementById('formStatus').textContent = `Por favor, espera ${remainingTime} segundos antes de enviar otro mensaje.`;
+                return;
+            }
+
+            const form = event.target;
+            const formStatus = document.getElementById('formStatus');
+            const data = new FormData(form);
+            
+            formStatus.textContent = 'Enviando...';
+
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    formStatus.textContent = '¡Gracias! Tu mensaje ha sido enviado.';
+                    formStatus.classList.add('visible'); // Agregar clase para hacer visible
+                    form.reset();
+                    lastSubmitTime = now; // Actualizar el tiempo de envío
+
+                    // Ocultar el mensaje después de 5 segundos
+                    setTimeout(() => {
+                        formStatus.classList.remove('visible');
+                    }, 5000);
+                } else {
+                    return response.json().then(data => {
+                        formStatus.textContent = "Oops! Hubo un problema al enviar tu mensaje.";
+                    });
+                }
+            }).catch(error => {
+                formStatus.textContent = "Error de red: " + error.message;
+            });
+        });
+        </script>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer con Redes Sociales</title>
+    <!-- Font Awesome CDN (versión más reciente) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .arriba {
+            display: inline-block;
+            background-color: #0056b3;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            font-size: 18px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+        .arriba:hover {
+            background-color: #003d82;
+        }
+        .redes {
+            margin-top: 20px;
+        }
+        .redes a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .redes a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido de la página aquí -->
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/DanielGiron11" target="_blank" title="Sígueme en Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/_DANIEL_GIRON_" target="_blank" title="Sígueme en X">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+                        </a>
+                        <a href="https://www.linkedin.com/in/josuegiron011/" target="_blank" title="Conéctame en LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+
+    <script src="script.js"></script>
+</body>
+</html>
